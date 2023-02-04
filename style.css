@@ -1,0 +1,235 @@
+
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:cursive;
+}
+
+/* Common Classes*/
+ a:hover
+{
+    border-bottom: 1px solid gray;
+    color: aqua;
+}
+
+.avatar
+{
+    padding: 0rem 1rem;
+}
+
+/* ---------------------------------*/
+.container
+{
+    width: 80%;
+    margin: auto;
+}
+
+.navigation
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    font-size:1.3rem;
+}
+
+
+.nav1 li{
+    list-style: none;
+    font-family: cursive;
+}
+
+
+.ul2
+{
+    list-style: none;
+    display: flex;
+    padding: 0 10px;
+}
+
+.ul2 li{
+    text-decoration: none;
+    padding: 0 10px; 
+    margin: 0 10px;   
+}
+
+.ul2 li a{
+    text-decoration: none;
+    color:gray;
+}
+
+.ul2 li button
+{
+   padding: 5PX 5PX;
+    border-radius: 10px;
+    background-color: orangered;
+    color: aqua;
+    font-size: 1rem;
+}
+
+
+/* Section 1 css code*/
+
+#sec1
+{
+  display: grid;
+  grid-template-columns:400px auto;
+  font-size:1rem;
+}
+
+.sec1-image{
+   
+  border-radius: 10px;
+  background: url(images/Main\ Article\ Image.png) no-repeat center center/cover;
+  width: 300px;
+  height: 300px;
+}
+
+
+.sec1-weekly h1{
+    padding:1rem 1rem    
+}
+
+.sec1-weekly p
+{
+    padding:1rem 1rem ;
+    font-size: 1.5rem;
+}
+
+
+img#avatar-1
+{
+    width: 70px;
+    height: 70px;
+}
+
+/**/
+
+
+#sec2
+{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    padding: 5rem 0rem;
+    gap: 20px;
+}
+
+#sec2 img
+{
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 300px;
+     height: auto;
+    border-radius: 40px;
+}
+
+#sec2 h2
+{
+   padding: 1rem 1rem;
+   font-weight: bold;
+   font-size:1.5rem;
+}
+
+#sec2 p
+{
+    padding: 1rem 1rem;
+    font-size:1.1rem
+}
+
+/* Avatars*/
+
+img#avatar-2
+{
+    width:70px;
+    height:70px;
+}
+
+img#avatar-3
+{
+    width: 60px;
+    height: 60px;
+}
+
+img#avatar-4
+{
+    width: 60px;
+    height: 60px;
+}
+
+
+/* ====================*/
+footer
+{
+   display:flex;
+   align-items:center;
+   justify-content:space-between;
+}
+
+
+
+
+/* Mobile Design*/
+
+@media(max-width:500px)
+{
+    
+    .ul2
+    {
+        display: none;
+    }
+
+    #sec1{
+    
+        grid-template-columns: repeat(1,1fr)
+    }
+
+    #sec2
+    {
+        
+        grid-template-columns: repeat(1,1fr);
+     }
+
+     footer
+     {
+        display: block;
+     }
+
+     footer p{
+        margin-top: 1em;;
+     }
+}
+
+
+
+/* Tab Design*/
+@media(max-width:820px)
+{
+    *
+    {
+        padding: 0 0.1rem;
+        
+    }
+
+
+    .nav1
+    {
+        align-items: center;
+    }
+    header
+    {
+        width: 80%;
+        margin: auto;
+    }
+    #sec1{
+    
+        grid-template-columns: repeat(1,1fr)
+    }
+
+    #sec2
+    {
+        grid-template-columns: repeat(1,1fr);
+    }
+
+}
